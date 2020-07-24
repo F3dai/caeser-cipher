@@ -9,7 +9,6 @@ logo = """
 """
 
 def menu():
-    print(logo)
     print("# Select menu item #\n")
     while True: # Persistance
         
@@ -76,6 +75,7 @@ def decrypt(cipher):
             print("[+] "+thing)
         elif len(cipher) < 4: # Print all if short
             print("[+] "+thing)
-
+            
+print(logo)
 while True:
     menu() # Let's goooo
