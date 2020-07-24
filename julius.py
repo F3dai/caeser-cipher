@@ -9,9 +9,8 @@ logo = """
 """
 
 def menu():
-    print("# Select menu item #\n")
     while True: # Persistance
-        
+        print("# Select menu item #\n")
         print("[1] Encrypt\n[2] Decrypt\n[3] Quit\n") 
         try: # Validate Menu Choice
             selection = int(input("Please enter your choice:"))
