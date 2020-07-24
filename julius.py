@@ -24,8 +24,8 @@ def menu():
                     print("\n[!] Out of range\n")
                     
             if selection == 2:
-                print("\n[*] The longer the cipher, the more accurate the results")
-                cipher = input("[*] Enter cipher: ").lower()
+                print("\n[*] The longer the cypher, the more accurate the results")
+                cipher = input("[*] Enter cypher: ").lower()
                 decrypt(cipher)
                 break
             if selection == 3:
