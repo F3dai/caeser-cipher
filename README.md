@@ -1,6 +1,6 @@
-# Caesar cipher
+# Caeser Cipher
 
-Encrypt and decrypt using the Caesar cipher algorithm.
+Encrypt and decrypt using the Caeser Cipher algorithm.
 
 The script will display most likely messages when decrypting.
 
