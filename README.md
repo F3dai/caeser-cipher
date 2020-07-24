@@ -6,4 +6,17 @@ The script will display most likely messages when decrypting.
 
 Usage:
 
-python3 julius.py
+<pre>python3 julius.py</pre>
+  
+## Menu
+
+![Menu](https://imgur.com/T0040O3.png)
+
+## Encrypt
+
+![Encrypt](https://imgur.com/eEYwFmr.png)
+
+## Decrypt
+
+![Decrypt](https://imgur.com/HD2pR83.png)
+
