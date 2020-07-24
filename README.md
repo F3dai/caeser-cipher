@@ -10,13 +10,13 @@ Usage:
   
 ## Menu
 
-![Menu](https://imgur.com/T0040O3.png)
+![Menu](https://imgur.com/OkJpDfU.png)
 
 ## Encrypt
 
-![Encrypt](https://imgur.com/eEYwFmr.png)
+![Encrypt](https://imgur.com/zrRnE9n.png)
 
 ## Decrypt
 
-![Decrypt](https://imgur.com/HD2pR83.png)
+![Decrypt](https://imgur.com/xFK8777.png)
 
