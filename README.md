@@ -1,6 +1,6 @@
 Encrypt and decrypt using the Caeser Cipher algorithm.
 
-The script will display most likely messages when decrypting.
+The script will display most likely conversions when decrypting.
 
 Usage:
 
