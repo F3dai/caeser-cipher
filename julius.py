@@ -10,7 +10,7 @@ logo = """
 
 def menu():
     while True: # Persistance
-        print("# Select menu item #\n")
+        print("\n# Select menu item #\n")
         print("[1] Encrypt\n[2] Decrypt\n[3] Quit\n") 
         try: # Validate Menu Choice
             selection = int(input("Please enter your choice:"))
@@ -51,7 +51,7 @@ def encrypt(plaintext, shift):
     print("\n[+] "+"".join(plaintext))
 
 def decrypt(cipher):
-    timmy = {}
+    possibilities_dict = {}
     cum = 0
     for x in range(26):
         vowel_count = 0
@@ -64,16 +64,15 @@ def decrypt(cipher):
                     vowel_count = vowel_count + 1
         cipher = ''.join(cipher)
         cum = cum + vowel_count # cumulative vowel count
-        timmy.update({cipher : vowel_count})
+        possibilities_dict.update({cipher : vowel_count})
 
     # Avg Calc #
     print("\n## Most likely messages ##\n")
-    avg = cum / 26
-    for thing in timmy:
-        if timmy[thing] > avg + (avg / 2) and len(cipher) > 4: # Upper quarter 4 + chars
-            print("[+] "+thing)
-        elif len(cipher) < 4: # Print all if short
-            print("[+] "+thing)
+
+    final = sorted(possibilities_dict.items(), key=lambda x:x[1])
+    for result in final[::-1][:4]:
+        print(result[0])
+
             
 print(logo)
 while True:
