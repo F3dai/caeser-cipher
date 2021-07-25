@@ -1,4 +1,5 @@
 import sys
+
 logo = """
 ░█████╗░░█████╗░███████╗░██████╗███████╗██████╗░  ░█████╗░██╗░░░██╗██████╗░██╗░░██╗███████╗██████╗░
 ██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝██╔══██╗  ██╔══██╗╚██╗░██╔╝██╔══██╗██║░░██║██╔════╝██╔══██╗
@@ -7,6 +8,8 @@ logo = """
 ╚█████╔╝██║░░██║███████╗██████╔╝███████╗██║░░██║  ╚█████╔╝░░░██║░░░██║░░░░░██║░░██║███████╗██║░░██║
 ░╚════╝░╚═╝░░╚═╝╚══════╝╚═════╝░╚══════╝╚═╝░░╚═╝  ░╚════╝░░░░╚═╝░░░╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
 """
+
+vowels = ["a", "e", "i", "o", "u"]
 
 def menu():
     while True: # Persistance
@@ -60,7 +63,7 @@ def decrypt(cipher):
             if cipher[x].isalpha() == True:
                 if cipher[x] == "z": cipher[x] = "a" # Loop back
                 else: cipher[x] = chr(ord(cipher[x]) + 1)
-                if cipher[x] == "a" or cipher[x] == "e" or cipher[x] == "i" or cipher[x] == "o" or cipher[x] =="u": # Count vowels
+                if cipher[x] in vowels: # Count vowels
                     vowel_count = vowel_count + 1
         cipher = ''.join(cipher)
         cum = cum + vowel_count # cumulative vowel count
@@ -70,7 +73,7 @@ def decrypt(cipher):
     print("\n## Most likely messages ##\n")
 
     final = sorted(possibilities_dict.items(), key=lambda x:x[1])
-    for result in final[::-1][:4]:
+    for result in final[::-1][:5]:
         print(result[0])
 
             
